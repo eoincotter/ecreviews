@@ -1,0 +1,158 @@
+body {background-image: url("images/background.jpeg");}
+    .page, header, nav, aside, article{border: 1px solid black; margin: 10px; text-align: center;}
+    aside{float: right; max-width: 320px;}
+    article{border-style: none;}
+	nav{margin: 0px; width: 960px;}
+	/*section{border: 1px solid black;}*/
+	.page{width: 960px; margin: 10px auto 10px auto;background-image: url("images/paper.png");}
+	header{width: 940px; border-style: none; margin: 0px;}
+	/*nav, footer, aside {background-color: gainsboro;}*/
+	nav a{color: black;}
+	a:hover{color: gray;}
+    .main article{width: 620px;}
+    .sub-articles article{width:319px; float: left; border-style: none;}
+    .sub-articles {overflow:auto;}
+    a{text-decoration: none;}
+	figure{margin: 5px;}
+	#main1 {float:right;}
+	#main2 {float:left;}
+	.review-home {height: 200px;}
+	form {border-top: 1px solid gray; /*border-bottom: 1px solid gray;*/ margin: 3px; padding: 10px;}
+	aside a{color: inherit; text-decoration: underline;}
+	.aside1{float: left; width: 220px;}
+	.main-article {float: left; width: 533px !important;}  /* change back!!!!!!!!! */
+	.main-article p{margin: 5px; font-size: 18px;}
+	.aside2{float: left; width: 140px;}
+	.main-review article, aside {border-style:none;}
+	.box1{ width: 249px; float: left; height: 251px; margin: 10px;}
+	.container{margin: 10px auto 10px auto; border-style: none; overflow:auto; width: 820px;}
+	footer{overflow: auto; width: 100%; clear: both; background-image: url("images/grey-background1.jpg");}
+	footer p{width: 320px; float: left;}
+	footer a{text-decoration: none; color: black;}
+	.sub-articles article{margin: 0px 0px 5px 0px; height: 125px;}
+	.sub-articles p{margin: 10px;}
+	#review-latest, #blog-latest {border-right: 1px solid gray;}
+	.main-sidebar {border-left: 1px solid gray;}
+	header h1{font-family: "monotype corsiva"; font-size:60px; width: 960px; color: black; margin: 20px 0px 20px 0px;}
+	header a{color: black;}
+	.main{margin-top: 40px;}
+	h1, h2, h3, h4, h5, h6 { font-family: "monotype corsiva" !important;}
+	h2, h3, h4, h5, h6 {font-size: 20px;}
+	.main-article{text-align: justify;}
+	.aside2 {border-left: 1px solid black !important; }
+	.aside1 img {margin-top: 20px;}
+	.aside2 h4{margin-top: 0px;}
+	.aside2{ margin-top: 27px;}
+	.aside2 p{margin-left: 15px;}
+	.aside2 a{text-decoration: none;}
+	/*.main-sidebar, .welcome, .review-home, h4, p*/{border: 1px solid black;}
+	.main-sidebar h4{margin-top: 0px; margin-bottom: 5px;}
+    .welcome p {text-align: left;}
+	.main-sidebar{margin:0px;}
+	.posts {float: left; width: 750px !important;}  /* change back!!!!!!!!! */
+	.blog-post p{margin: 5px;}
+	.blog-post{text-align: justify;}
+	.blog-post a {color: black;}
+	.blog-post a:hover {text-decoration: underline;}
+	.sub-articles a{color: black; text-decoration: none;}
+	.sub-articles a:hover {color: black; text-decoration: underline;}
+	#about-website, #about-design {float: left; width: 449px;}
+	.about h1{font-size: 25px;}
+	.about p{font-size: 18px; text-align: justify;}
+	.about {min-height: 400px;}
+	.about article {margin: 15px 15px 15px 15px}
+	.blog-post {border-bottom: 1px solid black;}
+	#post-date{margin-top: 0px; font-size: 12px;}
+	.blog-post h1{margin-bottom: 0px; padding-bottom: 0px; margin-left: 5px;}
+	.blog {overflow: auto; margin-top: 20px;}
+	.main-review h1{overflow: auto; padding: 0px; margin-top: 15px;}
+	.main-article h3{margin-top: 0px;}
+	.main-article h1 {margin-bottom: 0px; font-size: 25px;}
+	.main-review { margin-top: 20px; margin-bottom: 20px; overflow: auto;}
+	/*.main, .main-sidebar, .welcome, .review-home h4, .review-home p{border: 1px solid black;} */
+	.main-sidebar {margin-top: 0px;}
+	.review-home h4 {margin-bottom: 0px;}
+	.review-home p{ text-align: justify; margin-top: 10px;}
+	.welcome p{text-align: justify;}
+	.main, .sub-articles {margin-bottom: 20px;}
+
+	
+	
+
+	
+	
+	
+		/*nav, a{border: 1px solid black;}*/
+/* Navbar container */
+nav {
+  overflow: hidden;
+  /*background-color: gainsboro;*/font-size: 16px; font-family; "monotype corsiva";
+  text-align: center;
+  border-style: none;
+}
+
+/* Links inside the navbar */
+nav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "monotype corsiva";
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn { 
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  /*background-color: inherit;*/
+  background-image: url("images/button-background.png");
+
+}
+
+/*navbar links turn white on hover */
+nav a:hover, .dropdown:hover .dropbtn {
+ color: white;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}	
+.dropbtn, nav a{font-family:"monotype corsiva"; font-size: 20px;}
+.navcontainer {margin-left: 325px; border-top: 1px solid black; border-bottom: 1px solid black; overflow: auto; margin-right: 325px;}
+
